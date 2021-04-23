@@ -1,0 +1,7 @@
+FROM postgres:13.2
+
+ENV POSTGRESS_USER todo
+ENV POSTGRESS_PASSWORD todo1234
+ENV POSTGRESS_DB todo
+
+COPY CreateTodoTable.sql /docker-entrypoint-initdb.d/
